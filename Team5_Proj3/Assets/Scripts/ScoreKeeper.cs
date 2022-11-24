@@ -18,6 +18,7 @@ public class ScoreKeeper : MonoBehaviour
     {
         currentScene = SceneManager.GetActiveScene().name;
         scoreText.text = "0";
+        
     }
 
     // Update is called once per frame
@@ -46,5 +47,6 @@ public class ScoreKeeper : MonoBehaviour
             }
         }
     }
+    
 
 }

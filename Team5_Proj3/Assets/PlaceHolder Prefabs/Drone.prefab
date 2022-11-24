@@ -201,7 +201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shooterHealth: 0
   runnerHealth: 0
-  droneHealth: 4
+  droneHealth: 6
   carHealth: 0
 --- !u!114 &7177522050751572521
 MonoBehaviour:
