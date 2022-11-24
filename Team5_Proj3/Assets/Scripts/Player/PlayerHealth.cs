@@ -11,6 +11,7 @@ public class PlayerHealth : MonoBehaviour
     public bool isDamageAble = true;
     private int countingFrames;
     [SerializeField] int immunityTimesToCount;
+    [SerializeField] AudioSource damagePlayerS;
 
 
 
@@ -18,6 +19,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (isDamageAble)
         {
+            damagePlayerS.Play();
             playerLives -= 1;
             healthText.text = playerLives.ToString() + "/5";
             isDamageAble = false;

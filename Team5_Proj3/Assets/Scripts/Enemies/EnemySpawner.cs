@@ -33,6 +33,8 @@ public class EnemySpawner : MonoBehaviour
     [Header("Enemies to spawn")]
     [SerializeField] int spawnCount;
 
+    private int shooterNumber;
+
     private void Start()
     {
 
@@ -53,7 +55,7 @@ public class EnemySpawner : MonoBehaviour
         currentPosition = new Vector3(targetPosition.position.x, targetPosition.position.y, targetPosition.position.z);
         if (spawnAble)
         {
-            
+            shooterNumber = 0;
             int decree = Random.Range(0, 2);
             if (decree == 1)
             {
@@ -165,9 +167,10 @@ public class EnemySpawner : MonoBehaviour
         int runnerChance = Random.Range(1, 100) + runnerWeight;
         int droneChance = Random.Range(1, 100) + droneWeight;
         int carChance = Random.Range(1, 100) + carWeight;
-        if (shooterChance > runnerChance && shooterChance > droneChance && shooterChance > carChance)
+        if (shooterChance > runnerChance && shooterChance > droneChance && shooterChance > carChance && shooterNumber < 2)
         {
             Transform chosen = shooter;
+            shooterNumber++;
             return chosen;
         }
         else if (runnerChance > shooterChance && runnerChance > droneChance && runnerChance > carChance)

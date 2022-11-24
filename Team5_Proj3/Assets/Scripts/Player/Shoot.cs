@@ -17,6 +17,8 @@ public class Shoot : MonoBehaviour
     [SerializeField] AudioSource shoot;
     [SerializeField] int bullets;
     [SerializeField] TMP_Text bulletText;
+    [SerializeField] AudioSource reloadSound;
+    private bool isReloading;
 
    
     private int maxBullets;
@@ -82,7 +84,11 @@ public class Shoot : MonoBehaviour
         }
         else
         {
-            StartCoroutine(reload());
+            if(isReloading != true)
+            {
+                StartCoroutine(reload());
+            }
+            
         }
         
         
@@ -95,9 +101,12 @@ public class Shoot : MonoBehaviour
     }
     private IEnumerator reload()
     {
+        reloadSound.Play();
+        isReloading = true;
         yield return new WaitForSeconds(1f);
         bullets = maxBullets;
         bulletText.text = bullets.ToString() + "/" + maxBullets.ToString();
+        isReloading = false;
     }
 
 }

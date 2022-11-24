@@ -21,6 +21,8 @@ public class BossLaser : MonoBehaviour
     [SerializeField] float laserTime;
 
     [SerializeField] Transform spike;
+    [SerializeField] AudioSource laserLoad;
+    [SerializeField] AudioSource laserShoot;
 
     private bool isLasing;
     GameObject laser;
@@ -56,6 +58,7 @@ public class BossLaser : MonoBehaviour
     }
     private IEnumerator warningLaser(GameObject Laser, GameObject warning)
     {
+        laserLoad.Play();
         warning.SetActive(true);
         yield return new WaitForSeconds(3f);
         warning.SetActive(false);
@@ -67,6 +70,7 @@ public class BossLaser : MonoBehaviour
     }
     private IEnumerator laserDuration(GameObject laser, GameObject warning)
     {
+        laserShoot.Play();
         yield return new WaitForSeconds(laserTime);
         laser.SetActive(false);
         isLasing = false;
