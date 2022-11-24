@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 96
+  controlID: 65
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -68,8 +68,8 @@ MonoBehaviour:
     y: 0
     width: 386
     height: 931
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 40
+  controlID: 66
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 41
+  controlID: 67
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -346,22 +346,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/AlexisStuff/Lowrider
+    - Assets/Lowpoly Toon Cat Lite/Model/Materials
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/AlexisStuff/Lowrider
+  - Assets/Lowpoly Toon Cat Lite/Model/Materials
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Conno\Documents\GitHub\FinalProjectFinally\Team5_Proj3
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 62}
-    m_SelectedIDs: c0150200
-    m_LastClickedID: 136640
-    m_ExpandedIDs: 00000000f4120200f612020000130200c6150200c81502005619020000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 186f0200
+    m_LastClickedID: 159512
+    m_ExpandedIDs: 00000000267a0000146f0200166f020000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -389,7 +389,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 00000000267a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -516,10 +516,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 486}
+      scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 8acbfdffc8ccfdff52cdfdff56cdfdff7cd8fdff10eafdffc8ebfdff2aeefdff92f0fdffc8fafdff4400feff9600feffe400feff3401feff6e16feff381bfeffde150200e6150200f0150200fa150200041602003e16020048160200141f0200341f02003e1f0200601f0200f01f0200102002001a2002002220020054200200202202002c2202004822020052220200ee220200fa220200102302001a230200ae230200ba230200d0230200
+      m_ExpandedIDs: 00fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -801,9 +801,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -252.52655, y: 10.655271, z: -9.803565}
+    m_Target: {x: -243.42311, y: 5.6613183, z: -1.701661}
     speed: 2
-    m_Value: {x: -252.52655, y: 10.655271, z: -9.803565}
+    m_Value: {x: -243.42311, y: 5.6613183, z: -1.701661}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -849,13 +849,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.36099178, y: 0.011188312, z: -0.0044139437, w: 0.9324818}
+    m_Target: {x: 0.19944614, y: -0.073404364, z: 0.0148974955, w: 0.977023}
     speed: 2
-    m_Value: {x: 0.36098796, y: 0.012587135, z: -0.0049554706, w: 0.93247235}
+    m_Value: {x: 0.19798407, y: -0.07342799, z: 0.014787655, w: 0.97733927}
   m_Size:
-    m_Target: 12.4178
+    m_Target: 0.87555456
     speed: 2
-    m_Value: 11.883062
+    m_Value: 0.87555456
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -873,7 +873,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: 0.25970942, y: 0.024921, z: -0.0067070676, w: 0.96534294}
+  m_LastSceneViewRotation: {x: -0.055094298, y: 0.023992851, z: 0.0012435357, w: 0.9981823}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
